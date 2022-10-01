@@ -5,7 +5,7 @@ Commented Disassembly of  Li-Chen Wang's classic Kaleidoscope program for the Cr
 
 ## What is/was Kaleidoscope
 
-[Kaleidoscope](https://en.wikipedia.org/wiki/Li-Chen_Wang#Cromemco) is a rather tiny (127 Bytes) demo program for the [Cromemco Dazzler](https://en.wikipedia.org/wiki/Cromemco_Dazzler) by [Li-Chen Wang](https://en.wikipedia.org/wiki/Li-Chen_Wang). It displays a 64x64 colour graphic much like a mechanical [kaleidoscope](https://en.wikipedia.org/wiki/Kaleidoscope) using the repetitive structure of the Dazzlers memroy. The program was sold by Cromemco as on it's own for 15 USD on paper tape or later on floppy disk as part of their _DAZZLER Games_ pack at 95 USD.
+[Kaleidoscope](https://en.wikipedia.org/wiki/Li-Chen_Wang#Cromemco) is a rather tiny (127 Bytes) demo program for the [Cromemco Dazzler](https://en.wikipedia.org/wiki/Cromemco_Dazzler) by [Li-Chen Wang](https://en.wikipedia.org/wiki/Li-Chen_Wang). It displays a 64x64 colour graphic much like a mechanical [kaleidoscope](https://en.wikipedia.org/wiki/Kaleidoscope) using the repetitive structure of the Dazzlers memroy. The program was sold by Cromemco as on it's own for 15 USD on [paper tape](https://americanhistory.si.edu/collections/search/object/nmah_1423437) or later on floppy disk as part of their _DAZZLER Games_ pack at 95 USD.
 
 ## Why Adding a Repository 40+ Years Later?
 
