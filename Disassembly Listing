@@ -1,0 +1,89 @@
+0000:  31 00 01  LXI SP,0X0100
+0003:  3E 81     MVI A,0X81
+0005:  D3 0E     OUT 0X0E
+0007:  3E 30     MVI A,0x30
+0009:  D3 0F     OUT 0X0F
+000B:  78        MOV A,B
+000C:  0F        RRC
+000D:  0F        RRC
+000E:  A2        ANA D
+000F:  81        ADD C
+0010:  4F        MOV C,A
+0011:  0F        RRC
+0012:  0F        RRC
+0013:  A2        ANA D
+0014:  6F        MOV L,A
+0015:  78        MOV A,B
+0016:  95        SUB L
+0017:  47        MOV B,A
+0018:  C5        PUSH B
+0019:  D5        PUSH D
+001A:  E5        PUSH H
+001B:  11 00 00  LXI D,0X0000
+001E:  7C        MOV A,H
+001F:  E6 1F     ANI 0X1F
+0021:  1F        RAR
+0022:  DA 2B 00  JC 0X002B
+0025:  5F        MOV A,E
+0026:  07        RLC
+0027:  07        RLC
+0028:  07        RLC
+0029:  07        RLC
+002A:  57        MOV A,D
+002B:  26 08     MVI H,0X08
+002D:  CD 5D 00  CALL 0X005D
+0030:  78        MOV A,B
+0031:  2F        CMA
+0032:  47        MOV B,A
+0033:  26 06     MVI H,0X06
+0035:  CD 5D 00  CALL 0X005D
+0038:  79        MOV A,C
+0039:  2F        CMA
+003A:  4F        MOV C,A
+003B:  26 02     MVI H,0X02
+003D:  CD 5D 00  CALL 0X005D
+0040:  78        MOV A,B
+0041:  2F        CMA
+0042:  47        MOV B,A
+0043:  26 04     MVI H,0X04
+0045:  CD 5D 00  CALL 0X005D
+0048:  E1        POP H
+0049:  D1        POP D
+004A:  C1        POP B
+004B:  1D        DCR E
+004C:  C2 0B 00  JNZ 0X000B
+004F:  04        INR B
+0050:  0C        INR C
+0051:  1E 3F     MVI E,0X3F
+0053:  25        DCR H
+0054:  C2 0B 00  JNZ 0X000B
+0057:  14        INR D
+0058:  26 1F     MVI H,0X1F
+005A:  C3 0B 00  JMP 0X000B
+005D:  79        MOV A,C
+005E:  E6 F8     ANI 0XF8
+0060:  17        RAL
+0061:  6F        MOV L,A
+0062:  7C        MOV A,H
+0063:  CE 00     ACI 0X00
+0065:  67        MOV H,A
+0066:  78        MOV A,B
+0067:  E6 F8     ANI 0XF8
+0069:  1F        RAR
+006A:  1F        RAR
+006B:  1F        RAR
+006C:  1F        RAR
+006D:  F5        PUSH PSW
+006E:  85        ADD L
+006F:  6F        MOV L,A
+0070:  F1        POP PSW
+0071:  7E        MOV A,M
+0072:  DA 7A 00  JC 0X007A
+0075:  E6 F0     ANI 0XF0
+0077:  83        ADD E
+0078:  77        MOV M,A
+0079:  C9        RET
+007A:  E6 0F     ANI 0X0F
+007C:  82        ADD D
+007D:  77        MOV M,A
+007E:  C9        RET
