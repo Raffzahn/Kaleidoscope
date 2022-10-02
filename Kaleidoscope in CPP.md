@@ -1,5 +1,4 @@
-A few hours after the commented disassembly was [linked on Retrocomputing.SE](https://retrocomputing.stackexchange.com/a/25308/6659), [Spectre](https://retrocomputing.stackexchange.com/users/6868/spektre) posted a
-[C++ version](https://retrocomputing.stackexchange.com/a/25310/6659) wich might be moe pleasant to read to today's programmer. 
+A few hours after the [commented disassembly](Kaleidoscope.asm) was [linked](https://retrocomputing.stackexchange.com/a/25308/6659) on Retrocomputing.SE, [Spectre](https://retrocomputing.stackexchange.com/users/6868/spektre) posted a [C++ version](https://retrocomputing.stackexchange.com/a/25310/6659). This vrsion might be a bit more pleasant to today's programmer than Assembler, thus added here with permission:
 
 ---
 
@@ -87,7 +86,7 @@ Where `Main` is app window and `pyx[ys][xs]` is direct pixel access to backbuffe
 
 Here preview:
 
- https://i.stack.imgur.com/VxDCg.gif
+ ![Animated output](Kaleidoscope_CPP.gif)
 
 PS I am not familiar with the Dazzler so the palette I created might be wrong and also I changed the iteration a bit (count also 0 as there where not as many black pixels as colored ones and the image tends to grow too much to my taste)...
 
