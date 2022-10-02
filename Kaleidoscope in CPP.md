@@ -1,4 +1,4 @@
-A few hours after the [commented disassembly](Kaleidoscope.asm) was [linked](https://retrocomputing.stackexchange.com/a/25308/6659) on Retrocomputing.SE, [Spectre](https://retrocomputing.stackexchange.com/users/6868/spektre) posted a [C++ version](https://retrocomputing.stackexchange.com/a/25310/6659). This vrsion might be a bit more pleasant to today's programmer than Assembler, thus added here with permission:
+A few hours after the [commented disassembly](Kaleidoscope.asm) was [linked](https://retrocomputing.stackexchange.com/a/25308/6659) on Retrocomputing.SE, [Spectre](https://retrocomputing.stackexchange.com/users/6868/spektre) posted a [C++ version](https://retrocomputing.stackexchange.com/a/25310/6659). This one might be a bit more pleasant to today's programmer than Assembler, thus added here with permission:
 
 ---
 
