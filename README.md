@@ -5,7 +5,7 @@ Commented Disassembly of  Li-Chen Wang's classic Kaleidoscope program for the Cr
 
 ## What is/was Kaleidoscope
 
-[Kaleidoscope](https://en.wikipedia.org/wiki/Li-Chen_Wang#Cromemco) is a rather tiny (127 Bytes) demo program for the [Cromemco Dazzler](https://en.wikipedia.org/wiki/Cromemco_Dazzler) by [Li-Chen Wang](https://en.wikipedia.org/wiki/Li-Chen_Wang). It displays a 64x64 colour graphic much like a mechanical [kaleidoscope](https://en.wikipedia.org/wiki/Kaleidoscope) using the repetitive structure of the Dazzlers memroy. The program was sold by Cromemco as on its own for 15 USD on [paper tape](https://americanhistory.si.edu/collections/search/object/nmah_1423437) or later on floppy disk as part of their _DAZZLER Games_ pack at 95 USD.
+[Kaleidoscope](https://en.wikipedia.org/wiki/Li-Chen_Wang#Cromemco) is a rather tiny (127 Bytes) demo program for the [Cromemco Dazzler](https://en.wikipedia.org/wiki/Cromemco_Dazzler) by [Li-Chen Wang](https://en.wikipedia.org/wiki/Li-Chen_Wang). It displays a 64x64 colour graphic much like a mechanical/optical [kaleidoscope](https://en.wikipedia.org/wiki/Kaleidoscope) using the repetitive structure of the Dazzlers memroy. The program was sold by Cromemco as on its own for 15 USD on [paper tape](https://americanhistory.si.edu/collections/search/object/nmah_1423437) or later on floppy disk as part of their _DAZZLER Games_ pack at 95 USD.
 
 Here an example what it might look like (*1):
 
@@ -13,7 +13,7 @@ Here an example what it might look like (*1):
 
 ## Historic Relevance
 
-While Kaleidoscope might be considered more like a short demo for same new hardware, it had an amazing effect in its time - and honest, it's still catchy - which other program can claim to have slowed down trafic to a stand still on NYC's 5th Avenue in NYC? It may also have influenced some other well known programmers to write similar programs - like the [COLOR DEMO](https://youtu.be/zF_LFsIni8Q) on the Apples DOS 3.2 Disk for the Apple II.
+While Kaleidoscope might be considered more like a short demo for same new hardware, it had an amazing effect in its time - and honest, it's still catchy - which other program can claim to have slowed down trafic to a stand still on NYC's 5th Avenue? It may also have influenced some other well known programmers to write similar programs - like the [Low Res](https://en.wikipedia.org/wiki/Apple_II_graphics#Low-Resolution_(Lo-Res)_graphics) Kaleidoscope delivered as part of [COLOR DEMO](https://youtu.be/zF_LFsIni8Q) on the Apples [DOS 3.2 Disk](https://www.apple2history.org/history/ah14/#08) for the Apple II.
 
 ## Why Adding a Repository 40+ Years Later?
 
@@ -35,7 +35,7 @@ A few hours after the [commented disassembly](Kaleidoscope.asm) was [linked](htt
 
 - [Disassembly Listing](Disassembly%20Listing) -> Disassembly Listing used as base to regenerate the source
 - [Kaleidoscope.asm](Kaleidoscope.asm) -> Commented source listing of the Dazzler Kaleidoscope program
-- [Kaleidoscope in CPP.md](Kaleidoscope%20in%20CPP.md) -> Exemplary output using the CPP version 
+- [Kaleidoscope in CPP.md](Kaleidoscope%20in%20CPP.md) -> CPP version of Dazzler 
 - Kaleidoscope's ['manual' page](Kaleidoscope_Manual.png) from p.32 of the [Cromemco Dazzler Games Manual](http://www.bitsavers.org/pdf/cromemco/Cromemco_Dazzler_Games_1977.pdf) (at Bitsavers)
 - [Kaleidoscope_CPP.gif](Kaleidoscope_CPP.gif) -> Exemplary output using the CPP version 
 - README.md -> This file
