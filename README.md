@@ -9,6 +9,17 @@ Commented Disassembly of  Li-Chen Wang's classic Kaleidoscope program for the Cr
 
 ## Why Adding a Repository 40+ Years Later?
 
-In early October 2022 Maury Markowitz [asked](https://retrocomputing.stackexchange.com/questions/25304) on [RetroComputing.SE](https://retrocomputing.stackexchange.com/) if there's some high level analysis for that program, as all he could find was a basic disassembly. There are many sites referencing Kaleidoscope, including a few [running some emulation](https://observablehq.com/@fil/kaleidoscope-1976) to show it's output, but none offering a commented source or high level description - the only one [attempting to do so](https://www.quaxio.com/kaleidoscope_part1/) in 2020 [closed his blog](https://www.quaxio.com/last_post/) right before touching that part :(
+In early October 2022 Maury Markowitz [asked](https://retrocomputing.stackexchange.com/questions/25304) on [RetroComputing.SE](https://retrocomputing.stackexchange.com/) if there's some high level analysis for that program, as all he could find was a basic disassembly. There are many sites referencing Kaleidoscope, including a few [running some emulation](https://observablehq.com/@fil/kaleidoscope-1976) to show it's output (*1), but none offering a commented source or high level description - the only one [attempting to do so](https://www.quaxio.com/kaleidoscope_part1/) in 2020 [closed his blog](https://www.quaxio.com/last_post/) right before touching that part :(
 
 Being curious (and a bit bored) I decided to take a look at the disassembly, resulting in what's found here.
+
+## Files (so far)
+
+- [Disassembly Listing](Disassembly%20Listing) -> Disassembly Listing used as base to regenerate the source
+- [Kaleidoscope.asm](Kaleidoscope.asm) -> Commented source listing of the Dazzler Kaleidoscope program
+- README.md -> This file
+
+
+---
+
+*1 - Well, the [real output](https://www.youtube.com/watch?v=2tDbn1N8EWI) of a real Dazzler on a real CRT isn't as shiney and sterile :))
