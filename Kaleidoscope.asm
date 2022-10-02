@@ -11,8 +11,8 @@
 ; 0080..00FF Stack (6 bytes used)
 ; 0200..09FF Video Buffer
 
-TOP@ST   =     100H
-VID@BF   =     200H
+TOP@ST   EQU   100H
+VID@BF   EQU   200H
 
 
 ; Dazzler Video Registers
