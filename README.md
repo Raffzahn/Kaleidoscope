@@ -33,4 +33,4 @@ Being curious (and a bit bored) I decided to take a look at the disassembly, res
 
 ---
 
-*1 - Well, the [real output](https://www.youtube.com/watch?v=2tDbn1N8EWI) of a real Dazzler on a real CRT isn't as shiney and sterile :))
+*1 - Well, the [real output](https://www.youtube.com/watch?v=2tDbn1N8EWI) of a real Dazzler on a real CRT isn't as shiney and sterile as those modern browser implementations make it look:))
