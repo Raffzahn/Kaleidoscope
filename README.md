@@ -17,12 +17,19 @@ In early October 2022 Maury Markowitz [asked](https://retrocomputing.stackexchan
 
 Being curious (and a bit bored) I decided to take a look at the disassembly, resulting in what's found here.
 
+## Further Reading
+
+- ["Build the TV Dazzler"](http://www.bitsavers.org/pdf/cromemco/Dazzler_PE_Feb76.pdf) from February 1976 issue of Popular Elecronics (at Bitsavers)
+- Dazzler as Interface Age's [Card of the Month](http://bitsavers.informatik.uni-stuttgart.de/pdf/interfaceAge/productReviews/1977-03_Cromemco_Dazzler.pdf) of March 1977 (at Bitsavers)
+- [Cromemco Dazzler Instruction Manual](http://www.bitsavers.org/pdf/cromemco/Cromemco_Dazzler_Instruction_Manual_RevC_1976.pdf) Revision C of March 1976 (at Bitsavers)
+- [TV-Dazzler advertisement](https://archive.org/details/CromemcoCatalogAugust1976/page/n3/mode/2up?view=theater) in the August 1976 Cromemco Catalogue (at Archive.Org), including pictures of their program offerings (on Paper tape :)).
+
 ## Files (so far)
 
 - [Disassembly Listing](Disassembly%20Listing) -> Disassembly Listing used as base to regenerate the source
 - [Kaleidoscope.asm](Kaleidoscope.asm) -> Commented source listing of the Dazzler Kaleidoscope program
+- Kaleidoscope's ['manual' page](Kaleidoscope_Manual.png) from p.32 of the [Cromemco Dazzler Games Manual](http://www.bitsavers.org/pdf/cromemco/Cromemco_Dazzler_Games_1977.pdf) (at Bitsavers)
 - README.md -> This file
-
 
 ---
 
