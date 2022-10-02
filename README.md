@@ -23,6 +23,7 @@ Being curious (and a bit bored) I decided to take a look at the disassembly, res
 - Dazzler as Interface Age's [Card of the Month](http://bitsavers.informatik.uni-stuttgart.de/pdf/interfaceAge/productReviews/1977-03_Cromemco_Dazzler.pdf) of March 1977 (at Bitsavers)
 - [Cromemco Dazzler Instruction Manual](http://www.bitsavers.org/pdf/cromemco/Cromemco_Dazzler_Instruction_Manual_RevC_1976.pdf) Revision C of March 1976 (at Bitsavers)
 - [TV-Dazzler advertisement](https://archive.org/details/CromemcoCatalogAugust1976/page/n3/mode/2up?view=theater) in the August 1976 Cromemco Catalogue (at Archive.Org), including pictures of their program offerings (on Paper tape :)).
+- [The Cromemco Story](https://archive.org/details/IoNewsVolume1Number1/page/n5/mode/2up?view=theater), a 1980 article about the company's history (so far) in the IACO I/O News Vol.1 Issue.1 (at Archive.Org)
 
 ## Files (so far)
 
