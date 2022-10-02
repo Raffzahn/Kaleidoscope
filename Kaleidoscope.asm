@@ -12,7 +12,7 @@
 ; 0200..09FF Video Buffer
 
 TOP@ST   =     100H
-VID@BF   =     100H
+VID@BF   =     200H
 
 
 ; Dazzler Video Registers
@@ -21,9 +21,9 @@ VID@BF   =     100H
 ; Bit 6..1  = Address of Video Buffer
 
 DAZ@A    EQU   0EH                      ; Dazzler Address Port Address
-DAZ@ON   EQU   80H                      ; On/Off
+DAZ@ON   EQU   80H                      ; On/Off Bit
 
-; Mode Register at I/O Address 0Eh
+; Mode Register at I/O Address 0Fh
 ; Bit 8     = unused
 ; Bit 7     = Resolution
 ;             0 = Normal Resolution: 32x32x4 or 64x64x4
@@ -51,6 +51,15 @@ DAZ@M    EQU   0FH                      ; Dazzler Address Port Address
 DAZ@HR   EQU   40h                      ; High Resolution (1)
 DAZ@ML   EQU   20h                      ; Memory Size 512 Bytes (0) or 2 KiB (1)
 DAZ@CO   EQU   10h                      ; Colour (1) or B&W (0)
+
+; Synchronisation Register at I/O Address 0Eh
+;[Added for completeness, not used here]
+; Bit 8     = Even/Odd video line
+; Bit 7     = End of Frame - Set during vertical retrace
+; Bit 6..1  = Undefined
+DAZ@S    EQU   0EH                      ; Dazzler Synchronization Port Address
+DAZ@SL   EQU   40h                      ; Line Synchronisation
+DAZ@SF   EQU   40h                      ; Frame Synchronisation
 
          ORG   0  ; Program Start at Reset
 
@@ -215,12 +224,12 @@ OUTPX:   MOV   A,C                      ; Upper 5 bits of pixel address
 
          MOV   A,B                      ; Lower 5 bit of pixel address
          ANI   0F8H                     ; Extract under Mask
-         RAR                            ; Move them to 4 lower bits, lowest to carry
+         RAR                            ; Move top 4 to lower nibble, lowest to carry
          RAR   
          RAR   
          RAR   
-         PUSH  PSW                      ; Preserve Carry Flag  
-         ADD   L                        ; Add 4 lower Bits to low byte of HL pointer
+         PUSH  PSW                      ; Preserve Carry Flag holding the pixel 'address' 
+         ADD   L                        ; Add lower nibble to low byte of HL pointer
          MOV   L,A                      ; Save to low bye of HL pointer
          POP   PSW                      ; Restore Carry flag containing the lowest pixel address
                                         ; CY=0 Low Pixel; CY=1 High Pixel
