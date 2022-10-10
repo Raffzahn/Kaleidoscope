@@ -67,7 +67,7 @@ DAZ@SF   EQU   40h                      ; Frame Synchronisation
          LXI   SP,TOP@ST                ; Set Top of Stack to 100h
 
 ; Switch Dazzler output on and set address to 0200h
-         MVI   A,DAZ@ON+(.HIGH.VID@BF/2) ; Enable Dazzler and set buffer start to 0200h (=081h)
+         MVI   A,DAZ@ON+(.HIGH.VID@BF/2) ; Enable Dazzler and set the video buffer start to 0200h (=081h)
          OUT   DAZ@A                    ; Send to address port
 
 ; Set Dazzler Video Mode to 64x64 @ 16 Individual Colours
@@ -81,6 +81,7 @@ HKS:
 ;        Every odd cycle uses black
 ;        Every even will produce a colour from F down to 1 (Black (0) will not be reached)
 ;    D = Mask (0..FFh) used to 'randomize' the next address
+;    E = loop counter, counts down from 03FH to 0 
 ;    B = X coordinate * 8 (!)
 ;    C = Y coordinate * 8 (!)
 ; Note:
@@ -117,12 +118,13 @@ HKS:
          RAR                            ; Low bit defines if black or other colour is used
          JC    DBLACK                   ; Bit was 0 -> draw pixel as black
   
+; If it was not black, copy the 4-bit value into E and D
          MOV   E,A                      ; Colour to E for low pixel
          RLC                            ; Shift colour to high nibble for upper pixel
          RLC   
          RLC   
          RLC   
-         MOV   D,A                       ;
+         MOV   D,A                      ;
 DBLACK: 
 
 ; Draw a pixel mirrored 4 times
@@ -150,7 +152,6 @@ DBLACK:
 ;
 ; Drawing is done clockwise starting in the lower right quadrant
 
-
 ; Draw Pixel in lower right quadrant
          MVI   H,08H                    ; H = Base Address Page 4, B/C=X/Y pixel within that page
          CALL  OUTPX                    ; Set pixel at X/Y
@@ -176,13 +177,15 @@ DBLACK:
          MVI   H,04H                    ; H = Base Address Page 2, B/C=X/Y pixel within that page
          CALL  OUTPX                    ; Set pixel at X/-Y
 
-         POP   H                        ; Restore regs for main loop
+; Drawing complete, main loop continues
+         POP   H                        ; Restore registers for main loop
          POP   D  
          POP   B
 
-         DCR   E                        ; Already done 64 times?
-         JNZ   HKS                      ; No -> Next iteration
+         DCR   E                        ; Have we done this 64 times?
+         JNZ   HKS                      ; No -> back to the top of the loop
 
+; Every 64th cycle, bump the colors, locations and mask to randomize drawing
          INR   B                        ; X = X + 1/8th
          INR   C                        ; Y = Y + 1/8th
          MVI   E,03FH                   ; Prepare another 64 rounds
@@ -194,9 +197,7 @@ DBLACK:
          MVI   H,01FH                   ; Restart with colour 0Fh again
          JMP   HKS                      ; Start over
 
-
-
-; Output a Pixel
+; Output a Pixel subroutine
 ; In:
 ;    H  High byte page base (2/4/6/8)
 ;    L  ---
@@ -235,7 +236,7 @@ OUTPX:   MOV   A,C                      ; Upper 5 bits of pixel address
                                         ; CY=0 Low Pixel; CY=1 High Pixel
 
 ; Step two:
-;      Set either Pixel according to Cary to its colour 
+;      Set high or low Pixel, according to the carry bit, to the drawing colour 
 
          MOV   A,M                      ; Read existing pixel pair
          JC    OUTHPX                   ; CY set -> go do high pixel
