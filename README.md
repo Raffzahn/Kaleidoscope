@@ -21,7 +21,7 @@ In early October 2022 Maury Markowitz [asked](https://retrocomputing.stackexchan
 
 Being curious (and a bit bored) I decided to take a look at the disassembly, resulting in what's found here.
 
-A few hours after the [commented disassembly](Kaleidoscope.asm) was [linked](https://retrocomputing.stackexchange.com/a/25308/6659) on Retrocomputing.SE, [Spectre](https://retrocomputing.stackexchange.com/users/6868/spektre) posted a [C++ version](https://retrocomputing.stackexchange.com/a/25310/6659). A [copy](Kaleidoscope%20in%20CPP.md) is added with permission - might be a bit more pleasant to today's programmer than Assembler :)) 
+A few hours after the [commented disassembly](Kaleidoscope.asm) was [linked](https://retrocomputing.stackexchange.com/a/25308/6659) on Retrocomputing.SE, [Spektre](https://retrocomputing.stackexchange.com/users/6868/spektre) posted a [C++ version](https://retrocomputing.stackexchange.com/a/25310/6659). A [copy](Kaleidoscope%20in%20CPP.md) is added with permission - might be a bit more pleasant to today's programmer than Assembler :)) 
 
 ## Further Reading
 
