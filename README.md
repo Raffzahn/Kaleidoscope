@@ -21,7 +21,7 @@ In early October 2022 Maury Markowitz [asked](https://retrocomputing.stackexchan
 
 Being curious (and a bit bored) I decided to take a look at the disassembly, resulting in what's found here.
 
-A few hours after the [commented disassembly](Kaleidoscope.asm) was [linked](https://retrocomputing.stackexchange.com/a/25308/6659) on Retrocomputing.SE, [Spektre](https://retrocomputing.stackexchange.com/users/6868/spektre) posted a [C++ version](https://retrocomputing.stackexchange.com/a/25310/6659). A [copy](Kaleidoscope%20in%20CPP.md) is added with permission - might be a bit more pleasant to today's programmer than Assembler :)) 
+A few hours after the [commented disassembly](Kaleidoscope.asm) was [linked](https://retrocomputing.stackexchange.com/a/25308/6659) on Retrocomputing.SE, [Spektre](https://retrocomputing.stackexchange.com/users/6868/spektre) posted a [C++ recreation](https://retrocomputing.stackexchange.com/a/25310/6659). A [copy](Kaleidoscope%20in%20CPP.md) is added with permission - might be a more pleasant reading to today's programmer than Assembler :)) 
 
 ## Further Reading
 
@@ -35,11 +35,11 @@ A few hours after the [commented disassembly](Kaleidoscope.asm) was [linked](htt
 
 - [Disassembly Listing](Disassembly%20Listing) -> Disassembly Listing used as base to regenerate the source
 - [Kaleidoscope.asm](Kaleidoscope.asm) -> Commented source listing of the Dazzler Kaleidoscope program
-- [Kaleidoscope in CPP.md](Kaleidoscope%20in%20CPP.md) -> CPP version of Dazzler 
-- Kaleidoscope's ['manual' page](Kaleidoscope_Manual.png) from p.32 of the [Cromemco Dazzler Games Manual](http://www.bitsavers.org/pdf/cromemco/Cromemco_Dazzler_Games_1977.pdf) (at Bitsavers)
-- [Kaleidoscope_CPP.gif](Kaleidoscope_CPP.gif) -> Exemplary output using the CPP version 
+- [Kaleidoscope_Manual.png](Kaleidoscope_Manual.png) -> Kaleidoscope's 'manual' page from p.32 of the [Cromemco Dazzler Games Manual](http://www.bitsavers.org/pdf/cromemco/Cromemco_Dazzler_Games_1977.pdf) (at Bitsavers)
+- [Kaleidoscope in CPP.md](Kaleidoscope%20in%20CPP.md) -> [Spektre](https://retrocomputing.stackexchange.com/users/6868/spektre)'s C++ recreation of Kaleidoscope 
+- [Kaleidoscope_CPP.gif](Kaleidoscope_CPP.gif) -> Exemplary output using [Spektre](https://retrocomputing.stackexchange.com/users/6868/spektre)'s C++ recreation 
 - README.md -> This file
 
 ---
 
-*1 - Well, the [real output](https://www.youtube.com/watch?v=2tDbn1N8EWI) of a real Dazzler on a real CRT isn't as shiney and sterile as those modern browser implementations make it look:))
+*1 - Well, the [real output](https://www.youtube.com/watch?v=2tDbn1N8EWI) of a real Dazzler on a real CRT isn't as shiney and sterile as those modern browser implementations make it look:)) Also, the modern variant runs at about 2-3 times the original speed.
